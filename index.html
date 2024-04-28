@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WheelsOnTheGo - Car Rental</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#cars">Cars</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Homepage -->
+    <section id="home">
+        <h1>Welcome to WheelsOnTheGo</h1>
+        <p>Explore our fleet of rental cars.</p>
+        <label for="car-search">Search for a car:</label>
+        <input type="text" id="car-search" placeholder="Search for a car...">
+    </section>
+
+    <!-- Cars Section -->
+    <section id="cars">
+        <h2>Available Cars</h2>
+        <!-- Grid layout of cars with descriptions and pricing filters -->
+        <!-- Example: Car 1 -->
+        <div class="car">
+            <img src="car1.jpg" alt="Car 1">
+            <h3>Car Model 1</h3>
+            <p>Description of Car 1.</p>
+            <span class="price">$100/day</span>
+        </div>
+        <!-- Repeat for other cars -->
+
+        <!-- Pricing Filters -->
+        <div class="filters">
+            <label for="price-filter">Filter by Price:</label>
+            <select id="price-filter">
+                <option value="all">All</option>
+                <option value="cheap">Cheap</option>
+                <option value="midrange">Midrange</option>
+                <option value="luxury">Luxury</option>
+            </select>
+        </div>
+    </section>
+
+    <!-- About Us Page -->
+    <section id="about">
+        <h2>About WheelsOnTheGo</h2>
+        <p>Our mission is to provide convenient and reliable car rental services. Benefits of renting from us:</p>
+        <ul>
+            <li>Wide selection of cars</li>
+            <li>Flexible rental periods</li>
+            <li>Competitive pricing</li>
+        </ul>
+    </section>
+
+    <!-- Contact Page -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="message">Your message:</label>
+            <textarea id="message" placeholder="Your message"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
